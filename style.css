@@ -1,0 +1,87 @@
+/* ==UserStyle==
+@name           Toasty
+@namespace      github.com/ghostofthesewn
+@version        1.0.0
+@description    A userstyle for nekoweb that emulates nekoweb superbeta!
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix("https://nekoweb.org/") {
+    :root {
+        --white:#fff;
+        --grey:#b0b0b0;
+        --blue:#1900ff;
+        --purple:#5900e1;
+        --rainbow:linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, rgb(255, 178, 178) 15%, rgb(255, 199, 163) 30%, rgb(254, 255, 170) 45%, rgb(189, 255, 184) 60%, rgb(169, 225, 255) 75%, rgb(255, 199, 255) 90%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    html {
+        background:var(--white);
+    }
+        
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    font-family: "MS PGothic", Tahoma, Verdana;
+    font-style:normal;
+    text-transform:uppercase;
+    background:var(--rainbow);
+    max-width:fit-content;
+    color:var(--purple);
+}
+    #usersc {
+        border:none;
+    }
+    
+    
+    #loginform {
+    color: var(--blue);
+    padding:0;
+    text-transform:uppercase;
+    }
+
+    .login a {
+        color:var(--blue);
+        text-transform:uppercase;
+        font-weight:bold;
+    }
+    
+    .header {
+        background:var(--white);
+        border-bottom:var(--grey) 1px dotted;
+    }
+    .banner {
+        margin:0;
+       height: 100%;
+        width: 100%;
+    }
+    .banner img {
+    outline:2px inset var(--blue);
+    height: 100%;
+     width: 100%;
+    object-fit: cover;
+    max-height: none;
+    }
+    button:not(#stats a button, .thingamabob button, .control-btn, .ace_search button), input[type="submit"], select {
+        color:var(--blue);
+        background:var(--white);
+        border-radius:0;
+        
+    }
+    
+    .navigation {
+        filter:none;
+        border-right:var(--blue) 1px solid;
+    }
+    
+    .navigation::after {
+        content:none;
+    }
+    
+    .containergrid {
+    outline: 2px outset var(--blue);
+    }
+}
